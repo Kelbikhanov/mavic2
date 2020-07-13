@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    color: #fff;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page__section {
+    padding: 74px 0 50px;
+    min-height: 100vh;
+    background-image: url(../img/section__bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 44px;
+    padding-left: 25px;
+    margin-bottom: 55px;
+    line-height: 53px;
+}
+
+.scroll__btn {
+    padding: 13px 0 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Header*/
+
+.header {
+    position: fixed;
+    top: 30px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.container__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Ubuntu;
+    font-weight: 500;
+    min-height: 30px;
+    line-height: 17px;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+.menu__list-item {
+    display: inline-block;
+    padding-left: 20px;
+    
+}
+.menu__list-link {
+    text-decoration: none;
+    color: #fff;
+}
+.menu__list-link:hover {
+    opacity:.5;
+}
+
+.header__btn {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    color: #fff;
+    background-color: transparent;
+    padding: 6px 28px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+.header__btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.header__phone {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+/*Section Top*/
+
+.top {
+    min-height: 100vh;
+    background-image: url(../img/top__bg.jpg);
+    background-repeat: no-repeat;
+}
+.top:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(45.97% 54.43% at 50% 45.57%,
+     rgba(23, 26, 28, 0) 50.28%,
+      rgba(23, 26, 28, 0.00225974) 50.29%,
+       rgba(4, 5, 5, 0.820343) 58.72%,
+        rgba(5, 5, 6, 0.792703) 80.08%,
+         #000000 87.89%);
+    opacity: 0.2;
+}
+.top__inner {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.top__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 115px;
+}
+.top__text {
+    margin: 25px 0 35px;
+    max-width: 325px;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.top__social-item {
+    display: inline-block;
+    margin: 0 25px;
+}
+.top__social-link {
+    opacity: 0.5;
+    transition: all .3s;
+}
+.top__social-link:hover {
+    opacity: 1;
+}
